@@ -110,7 +110,7 @@ router.get("/:name?", (request, response) => {
     })
     .catch((err) => {
       //log the error
-      // console.log(err.details)
+      console.log(err.details)
       response.status(400).send({
         message: err.detail,
       });
@@ -159,7 +159,7 @@ router.put("/", (request, response) => {
       })
       .catch((err) => {
         //log the error
-        // console.log(err)
+        console.log(err)
         response.status(400).send({
           message: err.detail,
         });
@@ -209,7 +209,7 @@ router.delete("/:name", (request, response) => {
       })
       .catch((err) => {
         //log the error
-        // console.log(err)
+        console.log(err)
         response.status(400).send({
           message: err.detail,
         });
